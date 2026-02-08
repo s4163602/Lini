@@ -1,0 +1,171 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ board.name }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js"></script>
+</head>
+
+<body class="min-h-screen bg-slate-100 text-slate-900">
+  {% csrf_token %}
+  <header class="sticky top-0 z-40 border-b bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+      <div class="flex items-center gap-3">
+        <a href="{% url 'board:home' %}"><div class="h-8 w-8 rounded-lg bg-cyan-500 font-serif text-white p-2">Lini</div></a>
+        <div class="font-semibold">{{ board.name }}</div>
+        <span class="rounded-full bg-slate-100 px-2 py-0.5 text-xs text-slate-600">{{ role }}</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="newListBtn" class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-medium text-white hover:bg-slate-800">
+          Add
+        </button>
+        <a class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm hover:bg-slate-50" href="{% url 'board:members_view' board.id %}">
+          Members
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 py-6">
+
+    <section>
+      <div id="lists" class="flex gap-4 overflow-x-auto pb-6">
+        {% for lst in lists %}
+          <div class="w-80 shrink-0 rounded-2xl border border-slate-200 bg-white shadow-sm"
+               data-list-id="{{ lst.id }}">
+            <div class="flex items-center justify-between gap-2 px-3 py-3">
+              <input
+                class="min-w-0 flex-1 rounded-lg border border-transparent px-2 py-1 text-sm font-semibold outline-none hover:border-slate-200 focus:border-slate-300"
+                value="{{ lst.title }}"
+                data-role="list-title"
+              />
+              <button class="rounded-lg p-2 hover:bg-slate-100" data-role="list-delete" title="Delete list">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-600" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M10 6a1 1 0 011 1v8a1 1 0 11-2 0V7a1 1 0 011-1z"/>
+                  <path fill-rule="evenodd" d="M4 5a1 1 0 011-1h10a1 1 0 011 1v1a1 1 0 01-1 1h-1v9a2 2 0 01-2 2H7a2 2 0 01-2-2V8H4a1 1 0 01-1-1V5zm3 3v9h6V8H7z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+            </div>
+
+            <div class="px-3 pb-3">
+              <div class="mb-2 flex items-center gap-2">
+                <input
+                  class="flex-1 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm outline-none focus:border-slate-400"
+                  placeholder="Add a card"
+                  data-role="new-card-input"
+                />
+                <button class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-medium text-white hover:bg-slate-800" data-role="add-card-btn">
+                  Add
+                </button>
+              </div>
+
+              <div class="min-h-10 space-y-2 rounded-xl bg-slate-50 p-2"
+                   data-role="card-dropzone"
+                   data-list-id="{{ lst.id }}">
+                {% for c in lst.cards_for_view %}
+                  <div class="group cursor-pointer rounded-xl border border-slate-200 bg-white p-3 shadow-sm hover:border-slate-300"
+                       data-card-id="{{ c.id }}"
+                       data-card-tag="{{ c.tag }}">
+                    <div class="flex items-start justify-between gap-2">
+                      <div class="min-w-0 flex-1">
+                        <div class="truncate text-sm font-medium text-slate-900" data-role="card-title">{{ c.title }}</div>
+
+                        <div class="mt-1 text-xs">
+                          {% if c.tag == "not_started" %}
+                            <span class="rounded-full bg-slate-200 px-2 py-0.5 text-slate-700">Not started</span>
+                          {% elif c.tag == "in_progress" %}
+                            <span class="rounded-full bg-amber-200 px-2 py-0.5 text-amber-800">In progress</span>
+                          {% elif c.tag == "finished" %}
+                            <span class="rounded-full bg-emerald-200 px-2 py-0.5 text-emerald-800">Finished</span>
+                          {% endif %}
+                        </div>
+
+                        {% if c.desc %}
+                          <div class="mt-1 text-xs text-slate-600" data-role="card-desc">{{ c.desc|truncatechars:120 }}</div>
+                        {% else %}
+                          <div class="mt-1 hidden text-xs text-slate-600" data-role="card-desc"></div>
+                        {% endif %}
+                      </div>
+
+                      <button class="hidden rounded-lg p-1.5 hover:bg-slate-100 group-hover:block" data-role="quick-delete" title="Delete card">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-500" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M6 2a1 1 0 00-1 1v1H3a1 1 0 000 2h1v11a2 2 0 002 2h8a2 2 0 002-2V6h1a1 1 0 100-2h-2V3a1 1 0 00-1-1H6zm2 4a1 1 0 011 1v8a1 1 0 11-2 0V7a1 1 0 011-1zm4 0a1 1 0 011 1v8a1 1 0 11-2 0V7a1 1 0 011-1z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
+    <div id="modalBackdrop" class="absolute inset-0 bg-black/40"></div>
+
+    <div class="relative w-full max-w-lg rounded-2xl bg-white p-4 shadow-xl">
+      <div class="flex items-start justify-between gap-3">
+        <div class="min-w-0">
+          <div class="text-sm font-semibold text-slate-900">Edit card</div>
+          <div id="modalMeta" class="mt-1 text-xs text-slate-500"></div>
+        </div>
+        <button id="modalClose" class="rounded-lg p-2 hover:bg-slate-100" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+        </button>
+      </div>
+
+      <label class="mt-3 block text-xs font-medium text-slate-700">Title</label>
+      <input id="cardTitleInput" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-slate-400" />
+
+      <label class="mt-3 block text-xs font-medium text-slate-700">Description</label>
+      <textarea id="cardDescInput" rows="5" class="mt-1 w-full resize-none rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-slate-400"></textarea>
+
+      <label class="mt-3 block text-xs font-medium text-slate-700">Status</label>
+      <select id="cardTagInput" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-slate-400">
+        <option value="not_started">Not started</option>
+        <option value="in_progress">In progress</option>
+        <option value="finished">Finished</option>
+      </select>
+
+      <div class="mt-4 flex items-center justify-between">
+        <button id="deleteCardBtn" class="rounded-lg border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700 hover:bg-rose-100">
+          Delete
+        </button>
+        <div class="flex items-center gap-2">
+          <button id="modalCancel" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm hover:bg-slate-50">Cancel</button>
+          <button id="modalSave" class="rounded-lg bg-slate-900 px-3 py-2 text-sm font-medium text-white hover:bg-slate-800">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.BOARD_CTX = {
+      boardId: {{ board.id }},
+      role: "{{ role }}",
+      endpoints: {
+        listCreate: "{% url 'board:list_create' board.id %}",
+        listReorder: "{% url 'board:list_reorder' board.id %}",
+        listRenamePrefix: "{% url 'board:list_rename' board.id 0 %}".replace("/0/rename/", "/"),
+        listDeletePrefix: "{% url 'board:list_delete' board.id 0 %}".replace("/0/delete/", "/"),
+        cardCreate: "{% url 'board:card_create' board.id %}",
+        cardMove: "{% url 'board:card_move' board.id %}",
+        cardUpdatePrefix: "{% url 'board:card_update' board.id 0 %}".replace("/0/update/", "/"),
+        cardDeletePrefix: "{% url 'board:card_delete' board.id 0 %}".replace("/0/delete/", "/"),
+        exportJson: "{% url 'board:export_json' board.id %}",
+        reset: "{% url 'board:reset_board' board.id %}",
+      }
+    };
+  </script>
+  <script src="{% static 'board/board.js' %}"></script>
+</body>
+</html>
