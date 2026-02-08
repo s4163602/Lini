@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "board",
     "whitenoise",
-    "psycopg2-binary",
 ]
 
 MIDDLEWARE = [
