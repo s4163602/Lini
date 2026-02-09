@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "board",
     "whitenoise",
-    "corsheaders"
+    "django-cors-headers"
 ]
 
 MIDDLEWARE = [
