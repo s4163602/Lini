@@ -9,395 +9,136 @@ TEMPLATE = {
     "board_name": "Mai Phuong Linh",
     "lists": [
         {
-            "title": "GENERAL INFO",
+            "title": "March 2026",
             "cards": [
                 {
-                    "title": "GPA Goal (Grade 10 – Semester 2): Aim for 8.8+ / strong upward trend",
+                    "title": "GPA",
                     "desc": (
-                        "Focus on consistency and exam performance.\n"
-                        "Weekly routine:\n"
-                        "- Review notes the same day\n"
-                        "- 2 focused practice sessions per subject/week\n"
-                        "- Track scores + mistakes in a simple log\n"
+                        "Focus: Build study system.\n"
+                        "- Daily review after class (15–20 min)\n"
+                        "- 2 practice sessions per subject/week\n"
+                        "- Start error log\n"
+                        "- Weekly review every Sunday\n"
                     ),
-                    "tag": Card.TAG_NOT_STARTED,
                 },
                 {
-                    "title": "English Goal: IELTS prep (long-term target: 7.0–7.5+)",
+                    "title": "IELTS",
                     "desc": (
-                        "Semester 2 (Mar–Jun): build foundation + habits.\n"
-                        "Plan:\n"
-                        "- Listening/Reading: 30–45 min/day (Cambridge sets + review mistakes)\n"
-                        "- Speaking: 2 sessions/week (record + self-correct)\n"
-                        "- Writing: 1 task/week (Task 1 or Task 2) + get feedback\n"
+                        "Focus: Foundation.\n"
+                        "- 3 Listening + 3 Reading/week\n"
+                        "- 1 Writing task/week\n"
+                        "- 2 Speaking recordings/week\n"
+                        "- Start vocabulary notebook\n"
                     ),
-                    "tag": Card.TAG_NOT_STARTED,
                 },
                 {
-                    "title": "Finance Major Direction: What to explore (Grade 10–11)",
+                    "title": "SAT",
                     "desc": (
-                        "Explore early so your profile looks ‘finance-shaped’ later.\n"
-                        "Topics to sample:\n"
-                        "- Personal finance basics (budgeting, saving, investing)\n"
-                        "- Business & economics fundamentals\n"
-                        "- Excel for analysis + charts\n"
-                        "- Basic statistics for decision-making\n"
+                        "Focus: Basics.\n"
+                        "- Learn SAT format\n"
+                        "- Start Math fundamentals\n"
+                        "- Daily short reading practice\n"
+                        "- Build vocabulary\n"
                     ),
-                    "tag": Card.TAG_NOT_STARTED,
                 },
                 {
-                    "title": "Core Skill Stack (Finance track): Excel + Math + Communication",
+                    "title": "Finance Extracurriculars",
                     "desc": (
-                        "Priority skills to build from March:\n"
-                        "1) Excel: formulas, tables, charts, basic modeling\n"
-                        "2) Math: algebra + functions + statistics\n"
-                        "3) Communication: writing clearly, presenting ideas, teamwork\n"
+                        "Focus: Exploration.\n"
+                        "- Join business/economics club\n"
+                        "- Start personal finance journal\n"
+                        "- Learn basic money concepts\n"
                     ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "Roadmap Overview (March start) — Semester 2 focus",
-                    "desc": (
-                        "Main focus (Mar–Jun 2026):\n"
-                        "- Strong grades + stable study routine\n"
-                        "- Start finance-themed activities\n"
-                        "- Build English habit (IELTS foundation)\n"
-                        "- Begin a small portfolio: mini projects + reflections\n"
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
                 },
             ],
         },
 
         {
-            "title": "MARCH 2026 (Grade 10 – Semester 2 Start)",
+            "title": "April 2026",
             "cards": [
                 {
-                    "title": "Academics: Build a weekly study system",
+                    "title": "GPA",
                     "desc": (
-                        "Set your weekly plan (Mon–Sun).\n"
-                        "- 5 study days + 1 light review day + 1 rest day\n"
-                        "- After each class: 15-minute recap\n"
-                        "- End of week: 60–90 min review + prepare next week\n"
+                        "Focus: Improve weak subjects.\n"
+                        "- Use error log\n"
+                        "- Focus on hardest topics\n"
+                        "- Practice exam-style questions\n"
+                        "- Track progress weekly\n"
                     ),
-                    "tag": Card.TAG_NOT_STARTED,
                 },
                 {
-                    "title": "English: Start IELTS foundation routine",
+                    "title": "IELTS",
                     "desc": (
-                        "Weekly targets:\n"
-                        "- 3 Listening sets + review mistakes\n"
-                        "- 3 Reading passages + vocabulary notes\n"
-                        "- 1 Writing task (Task 1 or Task 2)\n"
-                        "- 1 Speaking topic recording (2–3 minutes)\n"
+                        "Focus: Improvement.\n"
+                        "- 2 Writing tasks/week\n"
+                        "- Improve structure + clarity\n"
+                        "- Expand vocabulary\n"
+                        "- Continue speaking practice\n"
                     ),
-                    "tag": Card.TAG_NOT_STARTED,
                 },
                 {
-                    "title": "Finance Exposure: Begin personal finance journal",
+                    "title": "SAT",
                     "desc": (
-                        "Create a simple journal (Google Doc/Notion):\n"
-                        "- Track spending categories (even if small)\n"
-                        "- Write 1 reflection/week: “What did I learn about money?”\n"
-                        "- Learn: needs vs wants, saving goals, budgeting\n"
+                        "Focus: Skill building.\n"
+                        "- Math problem solving\n"
+                        "- Reading strategies\n"
+                        "- Start timed practice\n"
+                        "- Identify weak areas\n"
                     ),
-                    "tag": Card.TAG_NOT_STARTED,
                 },
                 {
-                    "title": "Extracurricular: Join/plan 1 finance-related activity",
+                    "title": "Finance Extracurriculars",
                     "desc": (
-                        "Choose ONE to start:\n"
-                        "- School business/economics club\n"
-                        "- Debate/public speaking (helps finance presentations)\n"
-                        "- A small online course (Excel or intro economics)\n\n"
-                        "Goal: show consistent participation, not “many things once.”"
+                        "Focus: Skill building.\n"
+                        "- Learn Excel basics\n"
+                        "- Create budget spreadsheet\n"
+                        "- Read 2 finance articles/week\n"
                     ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "Portfolio: Set up your “Finance Growth Folder”",
-                    "desc": (
-                        "Make folders:\n"
-                        "- Notes (economics/finance)\n"
-                        "- Excel mini projects\n"
-                        "- Certificates\n"
-                        "- Reflections (what you learned)\n\n"
-                        "This will become your future application story."
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
                 },
             ],
         },
 
         {
-            "title": "APRIL 2026 (Mid-semester momentum)",
+            "title": "May 2026",
             "cards": [
                 {
-                    "title": "Academics: Improve weak subjects using an error log",
+                    "title": "GPA",
                     "desc": (
-                        "Pick 1–2 weakest topics.\n"
-                        "For each mistake write:\n"
-                        "- Why it happened\n"
-                        "- The correct method\n"
-                        "- A similar practice question\n\n"
-                        "Review the log every weekend."
+                        "Focus: Exam preparation.\n"
+                        "- Full revision plan\n"
+                        "- Timed practice\n"
+                        "- Review mistakes carefully\n"
+                        "- Aim highest scores\n"
                     ),
-                    "tag": Card.TAG_NOT_STARTED,
                 },
                 {
-                    "title": "Excel Skill: Basic formulas + charts (mini project #1)",
+                    "title": "IELTS",
                     "desc": (
-                        "Learn and use:\n"
-                        "- SUM, AVERAGE, IF, COUNTIF, VLOOKUP/XLOOKUP (if available)\n"
-                        "- Basic charts\n\n"
-                        "Mini project idea:\n"
-                        "- Monthly budget tracker + chart\n"
+                        "Focus: Test practice.\n"
+                        "- Weekly mini mock tests\n"
+                        "- Improve timing\n"
+                        "- Focus weak skills\n"
+                        "- Maintain consistency\n"
                     ),
-                    "tag": Card.TAG_NOT_STARTED,
                 },
                 {
-                    "title": "English: Writing focus (clarity + structure)",
+                    "title": "SAT",
                     "desc": (
-                        "Goal: 2 writing tasks this month.\n"
-                        "- 1 Task 1 (report)\n"
-                        "- 1 Task 2 (argument)\n\n"
-                        "Checklist:\n"
-                        "- Clear thesis\n"
-                        "- Topic sentences\n"
-                        "- Examples\n"
-                        "- Strong conclusion"
+                        "Focus: Speed + accuracy.\n"
+                        "- Weekly mini tests\n"
+                        "- Improve timing\n"
+                        "- Fix weak topics\n"
+                        "- Review all mistakes\n"
                     ),
-                    "tag": Card.TAG_NOT_STARTED,
                 },
                 {
-                    "title": "Finance Reading: 2 short articles/week + summary",
+                    "title": "Finance Extracurriculars",
                     "desc": (
-                        "Pick beginner-friendly sources.\n"
-                        "Each summary should include:\n"
-                        "- 3 key ideas\n"
-                        "- 5 new words\n"
-                        "- 1 question you still have\n"
+                        "Focus: Experience.\n"
+                        "- Join 1 competition/event\n"
+                        "- Do a small finance project\n"
+                        "- Write learning reflection\n"
                     ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "Extracurricular: Take a small responsibility role",
-                    "desc": (
-                        "Examples:\n"
-                        "- Help organize a club session\n"
-                        "- Create slides for a meeting\n"
-                        "- Lead a 10-minute sharing segment\n\n"
-                        "Leadership doesn’t need a title—show actions."
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-            ],
-        },
-
-        {
-            "title": "MAY 2026 (Assessment + performance month)",
-            "cards": [
-                {
-                    "title": "Academics: Exam preparation plan (2–3 weeks)",
-                    "desc": (
-                        "Break revision into:\n"
-                        "1) Concepts\n"
-                        "2) Practice questions\n"
-                        "3) Timed practice\n\n"
-                        "Use spaced repetition: revisit topics every few days."
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "English: One mini mock (Listening + Reading)",
-                    "desc": (
-                        "Do 1 mini mock per week:\n"
-                        "- 1 Listening section\n"
-                        "- 1 Reading passage set\n\n"
-                        "Rule: always review errors and write what to fix."
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "Excel Mini project #2: Simple savings/investment simulator",
-                    "desc": (
-                        "Build a sheet that shows:\n"
-                        "- monthly saving amount\n"
-                        "- growth over time\n"
-                        "- change interest rate / contribution\n\n"
-                        "Goal: understand compound growth visually."
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "Extracurricular: Finance-themed event / webinar (1)",
-                    "desc": (
-                        "Attend 1 beginner event and write a reflection:\n"
-                        "- What did you learn?\n"
-                        "- What surprised you?\n"
-                        "- What skill do you want to build next?"
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "Profile: Start a short “About Me” finance story draft",
-                    "desc": (
-                        "Write 150–250 words:\n"
-                        "- Why finance interests you\n"
-                        "- A personal experience (saving, planning, business idea)\n"
-                        "- What you want to learn next\n\n"
-                        "This becomes a future personal statement foundation."
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-            ],
-        },
-
-        {
-            "title": "JUNE 2026 (Semester wrap-up + reset)",
-            "cards": [
-                {
-                    "title": "Academics: Final review + improvement summary",
-                    "desc": (
-                        "Make a 1-page summary:\n"
-                        "- Best improvements\n"
-                        "- Remaining weaknesses\n"
-                        "- Targets for next term\n"
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "English: Speaking confidence week (3 recordings)",
-                    "desc": (
-                        "Record 3 speaking sessions:\n"
-                        "- 2 minutes: personal topic\n"
-                        "- 2 minutes: education/technology\n"
-                        "- 2 minutes: money/finance related\n\n"
-                        "Focus: fluency > perfection."
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "Finance: Learn the basics of “stocks vs bonds” (notes)",
-                    "desc": (
-                        "Write simple notes:\n"
-                        "- What each is\n"
-                        "- Why people invest\n"
-                        "- Risk vs return\n"
-                        "- Real-life examples\n"
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "Portfolio: Organize Semester 2 evidence",
-                    "desc": (
-                        "Save:\n"
-                        "- Best test results\n"
-                        "- Excel files\n"
-                        "- Reading summaries\n"
-                        "- Activity proof (photos, notes, certificates)\n"
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-            ],
-        },
-
-        {
-            "title": "JULY–AUGUST 2026 (Break Projects)",
-            "cards": [
-                {
-                    "title": "Project: Personal Finance Dashboard (Excel) — showcase piece",
-                    "desc": (
-                        "Build a dashboard with:\n"
-                        "- Budget categories\n"
-                        "- Monthly trend\n"
-                        "- Saving goal progress\n"
-                        "- Simple insights (what changed and why)\n\n"
-                        "This is a strong finance-themed portfolio item."
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "Course: Intro to Economics OR Excel for Business",
-                    "desc": (
-                        "Pick ONE course and finish it.\n"
-                        "Deliverables:\n"
-                        "- Completion certificate\n"
-                        "- 1-page notes summary\n"
-                        "- 3 key takeaways\n"
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "English: Maintain habit (light but consistent)",
-                    "desc": (
-                        "Weekly:\n"
-                        "- 2 Listening\n"
-                        "- 2 Reading\n"
-                        "- 1 Writing\n"
-                        "- 1 Speaking\n\n"
-                        "Don’t stop completely during break."
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "Extracurricular: Volunteer/club contribution (finance angle if possible)",
-                    "desc": (
-                        "Examples:\n"
-                        "- Help manage a small fundraiser budget\n"
-                        "- Track donations and create a report\n"
-                        "- Create posters + simple financial summary\n"
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-            ],
-        },
-
-        {
-            "title": "SEPTEMBER–DECEMBER 2026 (Next step preparation)",
-            "cards": [
-                {
-                    "title": "Academics: Set Grade 11 Semester 1 targets",
-                    "desc": (
-                        "Targets should be measurable:\n"
-                        "- GPA target\n"
-                        "- Subject targets\n"
-                        "- Weekly study hours\n"
-                        "- One improvement goal per subject\n"
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "English: Decide a realistic IELTS test window (future)",
-                    "desc": (
-                        "Discuss and plan:\n"
-                        "- Are you ready in early Grade 11?\n"
-                        "- If not, continue building to avoid rushing.\n\n"
-                        "Goal: stable skills, not just test tricks."
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "Finance Profile: Pick 1 focus theme",
-                    "desc": (
-                        "Choose ONE theme to build depth:\n"
-                        "- Personal finance & budgeting\n"
-                        "- Business & entrepreneurship\n"
-                        "- Investing basics\n"
-                        "- Data analysis for finance (Excel/Stats)\n\n"
-                        "Depth beats “random activities.”"
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
-                },
-                {
-                    "title": "Portfolio: Monthly ‘Finance Reflection’ (1 per month)",
-                    "desc": (
-                        "Each reflection includes:\n"
-                        "- What you learned\n"
-                        "- A small example/project\n"
-                        "- What to improve next month\n"
-                    ),
-                    "tag": Card.TAG_NOT_STARTED,
                 },
             ],
         },
