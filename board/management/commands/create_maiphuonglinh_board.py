@@ -12,9 +12,21 @@ TEMPLATE = {
             "title": "March 2026",
             "cards": [
                 {
+                    "title": "GENERAL GOALS (Semester 2)",
+                    "desc": (
+                        "Main Targets:\n"
+                        "- GPA: 9.3+\n"
+                        "- IELTS: 7.5+\n"
+                        "- Extracurriculars: Complete 2 activities\n"
+                        "  + 1 Finance-related\n"
+                        "  + 1 Charity / Community-related\n\n"
+                        "Rule: Consistency > intensity. Track progress weekly."
+                    ),
+                },
+                {
                     "title": "GPA",
                     "desc": (
-                        "Focus: Build study system.\n"
+                        "Focus: Build strong study system.\n"
                         "- Daily review after class (15–20 min)\n"
                         "- 2 practice sessions per subject/week\n"
                         "- Start error log\n"
@@ -32,22 +44,13 @@ TEMPLATE = {
                     ),
                 },
                 {
-                    "title": "SAT",
-                    "desc": (
-                        "Focus: Basics.\n"
-                        "- Learn SAT format\n"
-                        "- Start Math fundamentals\n"
-                        "- Daily short reading practice\n"
-                        "- Build vocabulary\n"
-                    ),
-                },
-                {
                     "title": "Finance Extracurriculars",
                     "desc": (
                         "Focus: Exploration.\n"
                         "- Join business/economics club\n"
                         "- Start personal finance journal\n"
                         "- Learn basic money concepts\n"
+                        "- Look for 1 charity opportunity\n"
                     ),
                 },
             ],
@@ -60,8 +63,8 @@ TEMPLATE = {
                     "title": "GPA",
                     "desc": (
                         "Focus: Improve weak subjects.\n"
-                        "- Use error log\n"
-                        "- Focus on hardest topics\n"
+                        "- Use error log consistently\n"
+                        "- Focus hardest topics\n"
                         "- Practice exam-style questions\n"
                         "- Track progress weekly\n"
                     ),
@@ -77,22 +80,13 @@ TEMPLATE = {
                     ),
                 },
                 {
-                    "title": "SAT",
-                    "desc": (
-                        "Focus: Skill building.\n"
-                        "- Math problem solving\n"
-                        "- Reading strategies\n"
-                        "- Start timed practice\n"
-                        "- Identify weak areas\n"
-                    ),
-                },
-                {
                     "title": "Finance Extracurriculars",
                     "desc": (
                         "Focus: Skill building.\n"
                         "- Learn Excel basics\n"
                         "- Create budget spreadsheet\n"
                         "- Read 2 finance articles/week\n"
+                        "- Start participating in 1 activity (finance or charity)\n"
                     ),
                 },
             ],
@@ -122,22 +116,12 @@ TEMPLATE = {
                     ),
                 },
                 {
-                    "title": "SAT",
-                    "desc": (
-                        "Focus: Speed + accuracy.\n"
-                        "- Weekly mini tests\n"
-                        "- Improve timing\n"
-                        "- Fix weak topics\n"
-                        "- Review all mistakes\n"
-                    ),
-                },
-                {
                     "title": "Finance Extracurriculars",
                     "desc": (
-                        "Focus: Experience.\n"
-                        "- Join 1 competition/event\n"
-                        "- Do a small finance project\n"
-                        "- Write learning reflection\n"
+                        "Focus: Completion.\n"
+                        "- Complete 1 finance-related activity/project\n"
+                        "- Complete 1 charity/community activity\n"
+                        "- Write reflection (what you learned)\n"
                     ),
                 },
             ],
