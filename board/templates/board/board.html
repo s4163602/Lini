@@ -72,7 +72,7 @@
                        data-card-tag="{{ c.tag }}">
                     <div class="flex items-start justify-between gap-2">
                       <div class="min-w-0 flex-1">
-                        <div class="truncate text-sm font-medium text-slate-900" data-role="card-title">{{ c.title }}</div>
+                        <div class="text-sm font-medium text-slate-900" data-role="card-title">{{ c.title }}</div>
 
                         <div class="mt-1 text-xs">
                           {% if c.tag == "not_started" %}
@@ -85,7 +85,7 @@
                         </div>
 
                         {% if c.desc %}
-                          <div class="mt-1 text-xs text-slate-600" data-role="card-desc">{{ c.desc|truncatechars:120 }}</div>
+                          <div class="mt-1 text-xs text-slate-600" data-role="card-desc">{{ c.desc }}</div>
                         {% else %}
                           <div class="mt-1 hidden text-xs text-slate-600" data-role="card-desc"></div>
                         {% endif %}
