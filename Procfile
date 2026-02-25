@@ -1,0 +1,1 @@
+web gunicorn trello_django.wsgi:application --log-
